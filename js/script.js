@@ -36,16 +36,12 @@ function generatePassword() {
     } 
     // If user chose lower case, include lower case
   var lowCase = confirm("Would you like your password to include lowercase letters?");
-    console.log(lowCase);
     // If user choose upper case, include upper case
   var upCase = confirm("Would you like your password to include uppercase letters?");
-    console.log(upCase);
     // If user select numbers, include number
   var numbers = confirm("Would you like your password to include numbers?");
-    console.log(numbers);
     //if user select special caracters, add specialchars
   var specialChars = confirm("Would you like your password to include special characters?");
-    console.log(specialChars);
   var passwordSet = "";
 
     if (lowCase) { 
