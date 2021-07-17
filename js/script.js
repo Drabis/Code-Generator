@@ -23,17 +23,6 @@ function generatePassword() {
         return ("");
       }
     }
-    //if user did not enter a valid number,then ask to try again !
-
-    if (isNaN(parseInt(passwordLength))) {
-      alert("Please only enter a numerical value");
-      var tryAgain = confirm("Would you like to try again?");
-      if (tryAgain) {
-        generatePassword();
-      } else {
-        return ("");
-      }
-    } 
     // If user chose lower case, include lower case
   var lowCase = confirm("Would you like your password to include lowercase letters?");
     // If user choose upper case, include upper case
@@ -56,7 +45,6 @@ function generatePassword() {
     if (specialChars) {
       passwordSet = passwordSet + specialSet;
     }
-    console.log(passwordLength);
     for ( var i = 0; i < passwordLength; i++ ) {
       password += passwordSet[Math.floor(Math.random() * passwordSet.length)];
   }
